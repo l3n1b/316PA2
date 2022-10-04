@@ -1,0 +1,63 @@
+<!-- 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup
+ -->
+<form action="" method="get" class="form-example">
+  <label for="name">Enter your name: </label>
+  <input type="text" name="name" id="name" required>
+  <br>
+
+  <label for="email">Enter your email: </label>
+  <input type="email" name="email" id="email" required>
+  <br>
+
+  <label for="story">Tell us your story:</label>
+  <textarea id="story" name="story" rows="5" cols="33">
+  It was a dark and stormy night...
+  </textarea>
+  <br>
+
+  <label for="ice-cream-choice">Choose a flavor:</label>
+  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+  <datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+  </datalist>
+  <br>
+
+  <label for="pet-select">Choose a pet:</label>
+  <select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+  </select>
+  <br>
+
+  <label for="dino-select">Choose a dinosaur:</label>
+  <select id="dino-select">
+    <optgroup label="Theropods">
+      <option>Tyrannosaurus</option>
+      <option>Velociraptor</option>
+      <option>Deinonychus</option>
+    </optgroup>
+    <optgroup label="Sauropods">
+      <option>Diplodocus</option>
+      <option>Saltasaurus</option>
+      <option>Apatosaurus</option>
+    </optgroup>
+  </select>
+  <br>
+
+  <input type="submit" value="Subscribe!">
+  <br>
+</form>

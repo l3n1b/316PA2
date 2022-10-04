@@ -1,0 +1,20 @@
+<!doctype html>
+	<body>
+		<canvas id="canvas" style="border: 1px solid black;margin: 0 auto;display: block;">
+			default content
+		</canvas>
+		<script>
+			const canvas_width = 400;
+			const canvas_height = 400;
+			const canvas = document.getElementById('canvas')
+			canvas.width = canvas_width;
+			canvas.height = canvas_height;
+			canvas.style.width = `${canvas_width}px`;
+			canvas.style.height = `${canvas_height}px`;
+
+			var ctx = canvas.getContext('2d'); 
+			ctx.fillStyle = 'green'; 
+			ctx.fillRect(10, 10, 100, 100);
+		</script>
+	</body>
+</html>
