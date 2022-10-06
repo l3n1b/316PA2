@@ -1,3 +1,14 @@
+<!-- ### Login Page
+
+The login page should contain a login form which accepts a username and password combination. The username field can either be a username or the user's email address. The form would log in a user to the system assuming they entered a valid username password pair (your form does not need to do anything on submit).
+
+To earn full credit your page must include the following elements and be styled using Bootstrap.
+- A form containing...
+	- An input field for the user's username
+	- An input field for the user's password
+	- A `Sign in` button to submit the form
+- A navbar as described above
+- A footer as described above -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,34 +36,39 @@
         </div>
       </div>
     </nav>
-    <!-- this is where all of the content goes -->
-    <form class="row g-3 needs-validation" novalidate>
 
-      <!-- Username -->
-      <div class="col-md-4">
-        <label for="validationCustomUsername" class="form-label">Username</label>
-        <div class="input-group has-validation">
-          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-          <div class="invalid-feedback">
-            Username not found.
-          </div>
-        </div>
-      </div>
+    
+    <div class="container pt-5">
 
-      <!-- Password -->
-      <div class="col-md-6">
-          <label for="validationCustom02" class="form-label">Password</label>
-          <input type="text" class="form-control" id="validationCustom02" required>
-          <div class="invalid-feedback">
-            Incorrect Password.
+      <!-- this is where all of the content goes -->
+      <form class="row g-3 needs-validation" novalidate>
+
+        <!-- Username -->
+        <div class="text-center">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Username not found.
+            </div>
           </div>
         </div>
 
-      <!-- Sign In -->
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Sign In</button>
-      </div>
-    </form>
+        <!-- Password -->
+        <div class="text-center">
+            <label for="validationCustom02" class="form-label">Password</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+            <div class="invalid-feedback">
+              Incorrect Password.
+            </div>
+          </div>
+
+        <!-- Sign In -->
+        <div class="text-center">
+          <button class="btn btn-primary" type="submit">Sign In</button>
+        </div>
+      </form>
+    </div>
 
     <h1>Hello, world!</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
